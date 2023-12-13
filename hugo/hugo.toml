@@ -9,4 +9,4 @@ sectionPagesMenu = 'main'
   [services.googleAnalytics]
     ID = 'G-ZWHV2C1CGY'
   [services.disqus]
-    shortname = 'libitum-github.disqus.com'
+    shortname = 'libitum-github'
