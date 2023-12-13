@@ -8,5 +8,28 @@ sectionPagesMenu = 'main'
 [services]
   [services.googleAnalytics]
     ID = 'G-ZWHV2C1CGY'
-  [services.disqus]
-    shortname = 'libitum-github'
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 30
+
+[params]
+  author = "Libitum"
+  description = "code writer"
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/Libitum"

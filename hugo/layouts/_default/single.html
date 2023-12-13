@@ -1,0 +1,50 @@
+{{ define "main" }}
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">{{ .Title }}</h1>
+      {{- if ne .Type "page" }}
+      <div class="post-meta">
+        <div>
+          {{ partial "icon.html" (dict "ctx" $ "name" "calendar") }}
+          {{ .PublishDate.Format "Jan 2, 2006" }}
+        </div>
+        <div>
+          {{ partial "icon.html" (dict "ctx" $ "name" "clock") }}
+          {{ .ReadingTime }} min read
+        </div>
+        {{- with .Params.tags }}
+        <div>
+          {{ partial "icon.html" (dict "ctx" $ "name" "tag") }}
+          {{- range . -}}
+            {{ with $.Site.GetPage (printf "/%s/%s" "tags" . ) }}
+              <a class="tag" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{- end }}
+          {{- end }}
+        </div>
+        {{- end }}
+      </div>
+      {{- end }}
+    </header>
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+    <div class="post-footer">
+      <script src="https://giscus.app/client.js"
+        data-repo="Libitum/libitum.github.com"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkyOTg2NzM1"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOAC2S784CbtAM"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="dark"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+      </script>
+    </div>
+  </article>
+{{ end }}
