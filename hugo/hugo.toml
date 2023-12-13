@@ -4,9 +4,9 @@ title = '立波吞'
 theme = 'm10c'
 
 sectionPagesMenu = 'main'
-author = 'libitum'
-description = '码农'
 
 [services]
   [services.googleAnalytics]
     ID = 'G-ZWHV2C1CGY'
+  [services.disqus]
+    shortname = 'libitum-github.disqus.com'
