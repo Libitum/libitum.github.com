@@ -1,4 +1,4 @@
 baseURL = 'https://libitum.github.io/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'zh-cn'
+title = '立波吞'
 theme = 'm10c'
