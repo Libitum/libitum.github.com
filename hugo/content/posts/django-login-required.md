@@ -12,6 +12,8 @@ draft = false
 
 因此，需要能够实现一个默认的 『login_required』，默认将所有接口都加上登录校验，而只将一些特殊的接口例外。
 
+<!--more-->
+
 ## Solution
 1. 使用 Django Middleware 来实现登录校验
 
