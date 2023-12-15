@@ -1,13 +1,30 @@
 baseURL = 'https://libitum.github.io/'
 languageCode = 'zh-cn'
 title = '立波吞'
-theme = 'm10c'
+theme = 'tailwind'
 
 sectionPagesMenu = 'main'
 
 [services]
   [services.googleAnalytics]
     ID = 'G-ZWHV2C1CGY'
+
+[params]
+# giscus is comments system powered by GitHub Discussions
+# generate configurations from https://giscus.app/
+[params.giscus]
+  enabled = true
+  repo = "Libitum/libitum.github.com"
+  repoID = "MDEwOlJlcG9zaXRvcnkyOTg2NzM1"
+  category = "Announcements"
+  categoryID = "DIC_kwDOAC2S784CbtAM"
+  mapping = "pathname"
+  strict = "0"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "bottom"
+  lang = "en"
+  loading = "lazy"
 
 [menu]
   [[menu.main]]
@@ -16,20 +33,7 @@ sectionPagesMenu = 'main'
     url = "/"
     weight = 10
   [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
-    weight = 20
-  [[menu.main]]
     identifier = "about"
     name = "About"
-    url = "/about/"
-    weight = 30
-
-[params]
-  author = "Libitum"
-  description = "code writer"
-  [[params.social]]
-    icon = "github"
-    name = "Github"
-    url = "https://github.com/Libitum"
+    url = "/about"
+    weight = 20

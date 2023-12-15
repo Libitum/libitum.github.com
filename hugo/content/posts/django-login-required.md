@@ -1,6 +1,8 @@
 +++
 title = 'Django Api 服务之实现默认的 login_required'
 date = 2017-06-20T23:23:00+08:00
+categories = ['Tech']
+tags = ['Python']
 draft = false
 +++
 
