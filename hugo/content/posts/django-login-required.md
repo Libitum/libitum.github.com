@@ -6,7 +6,6 @@ tags = ['Python']
 draft = false
 +++
 
-## Background
 我们在使用 Django 做 Api 开发时，基本所有接口都需要认证。这种情况下，如果使用 Django 
 原生的 login_required 就会显得非常麻烦，每个接口上都需要添加这个装饰器。
 
