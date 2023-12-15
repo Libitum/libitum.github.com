@@ -3,8 +3,6 @@ languageCode = 'zh-cn'
 title = '立波吞'
 theme = 'tailwind'
 
-sectionPagesMenu = 'main'
-
 [services]
   [services.googleAnalytics]
     ID = 'G-ZWHV2C1CGY'
