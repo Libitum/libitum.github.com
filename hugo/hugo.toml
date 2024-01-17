@@ -1,7 +1,10 @@
 baseURL = 'https://libitum.github.io/'
 languageCode = 'zh-cn'
-title = '立波吞'
 theme = 'tailwind'
+
+title = '立波吞'
+subtitle = "Libitum's blog."
+keywords = ""
 
 [services]
   [services.googleAnalytics]
