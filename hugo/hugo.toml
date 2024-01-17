@@ -8,6 +8,9 @@ theme = 'tailwind'
     ID = 'G-ZWHV2C1CGY'
 
 [params]
+[params.header]
+  logo = "logo.jpeg"
+
 # giscus is comments system powered by GitHub Discussions
 # generate configurations from https://giscus.app/
 [params.giscus]
