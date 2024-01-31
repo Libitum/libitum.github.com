@@ -1,16 +1,15 @@
 baseURL = 'https://libitum.github.io/'
 languageCode = 'zh-cn'
 theme = 'tailwind'
-
 title = '立波吞'
-subtitle = "Libitum's blog."
-keywords = ""
 
 [services]
   [services.googleAnalytics]
     ID = 'G-ZWHV2C1CGY'
 
 [params]
+subtitle = "Libitum's blog."
+keywords = "blog,NAS"
 [params.header]
   logo = "logo.jpeg"
 
