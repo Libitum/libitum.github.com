@@ -8,10 +8,10 @@ title = '立波吞'
     ID = 'G-ZWHV2C1CGY'
 
 [params]
-subtitle = "Libitum's blog."
-keywords = "blog,NAS"
-[params.header]
-  logo = "logo.jpeg"
+  subtitle = "Libitum's blog."
+  keywords = "blog,NAS"
+  [params.header]
+    logo = "logo.jpeg"
 
 # giscus is comments system powered by GitHub Discussions
 # generate configurations from https://giscus.app/
